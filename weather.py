@@ -105,8 +105,10 @@ class WeatherApp(QWidget):
             self.emoji_label.setText("❄️")
         elif "storm" in weather_description or "thunder" in weather_description:
             self.emoji_label.setText("⛈️")
+        elif weather_description == "Haze":
+            self.emoji_label.setText("🌫️")
         else:
-            "kidea rame amindi?"
+            self.emoji_label.setText("meti amindi agar vici")
 
 
 
